@@ -43,6 +43,7 @@ pip3 install -U -r requirements.txt
 安装完之后执行：
 
 ```
+cd ~/yolov3_detect
 python detect.py
 ```
 
@@ -50,7 +51,7 @@ python detect.py
 
 1.在data文件夹中添加xxx.data和xxx.names文件(示例为球类检测，ball.data和ball.name已经添加到data文件夹中)
 
-2.在weights文件夹中添加训练好的best.pt(示例为球类检测的2000epoch的模型已添加)
+2.在weights文件夹中添加训练好的best.pt
 
 3.在cfg文件夹中添加训练网络时修改过的xxx.cfg文件（示例球类检测的yolov3.cfg已经添加至cfg文件夹中）
 
