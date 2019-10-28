@@ -1,33 +1,58 @@
-# **yolo_v3前向简化代码**
+# yolo_v3的**CPU**前向代码
 
-本代码适用于python2和python3
+本代码适用于python2和python3，CPU上可以运行。
 
-- python2
+## 1.安装
+
+pytorch安装参考官网： https://pytorch.org/get-started/locally/ 
+
+- 如果你在conda环境下安装，新建一个环境之后，执行：
+
+```
+conda install pytorch torchvision cpuonly -c pytorch
+
+conda install -yc anaconda future numpy opencv matplotlib tqdm pillow
+conda install -yc conda-forge scikit-image tensorboard pycocotools
+conda install -yc spyder-ide spyder-line-profiler
+
+git clone https://github.com/zoeyuchao/yolov3_detect.git
+```
+
+- 如果不在conda下，直接是系统版本的python，那么参考：
+  - python2
 
 ```
 pip install torch==1.3.0+cpu torchvision==0.4.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
-```
 
-- python3
+git clone https://github.com/zoeyuchao/yolov3_detect.git
+
+pip install -U -r requirements.txt
+```
+  -   python3
 
 ```
 pip3 install torch==1.3.0+cpu torchvision==0.4.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
+git clone https://github.com/zoeyuchao/yolov3_detect.git
+
+pip3 install -U -r requirements.txt
 ```
+
+## 2.测试
 
 安装完之后执行：
 
 ```
-git clone https://github.com/MoynaChen/detect_obj
 python detect.py
 ```
 
-**Tips**
+## 3.Tips
 
-1.在data文件夹中添加xxx.data,xxx.names(示例为球类检测，ball.data和ball.name已经添加到data文件夹中)
+1.在data文件夹中添加xxx.data和xxx.names文件(示例为球类检测，ball.data和ball.name已经添加到data文件夹中)
 
-2.在weight文件夹中添加训练好的best.pt
+2.在weights文件夹中添加训练好的best.pt(示例为球类检测的2000epoch的模型已添加)
 
-3.在cfg文件夹中添加训练网络时修改过的yolov3.cfg（球类检测的yolov3已经添加至cfg文件夹中）
+3.在cfg文件夹中添加训练网络时修改过的xxx.cfg文件（示例球类检测的yolov3.cfg已经添加至cfg文件夹中）
 
 4.可能遇到no model named xxx，解决方法 pip install xxx
 
