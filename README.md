@@ -62,6 +62,8 @@ python detect.py
   - 提供的fire_new.pt:
   
     - 百度网盘链接：https://pan.baidu.com/s/1dRVtwi1etSEObMPW82wnDA 提取码：1gup
+    
+    - 清华网盘链接：https://cloud.tsinghua.edu.cn/f/b2b5fb05152a4059b3f3/?dl=1
 
 3.在cfg文件夹中添加训练网络时修改过的xxx.cfg文件（示例球类检测的yolov3.cfg已经添加至cfg文件夹中,更新fire）
 
