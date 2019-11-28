@@ -49,7 +49,7 @@ python detect.py
 
 ## 3.Tips
 
-1.在data文件夹中添加xxx.data和xxx.names文件(示例为球类检测，ball.data和ball.name已经添加到data文件夹中)
+1.在data文件夹中添加xxx.data和xxx.names文件(示例为球类检测，ball.data和ball.name已经添加到data文件夹中,更新了fire.data和ball.name)
 
 2.在weights文件夹中添加训练好的best.pt
 
@@ -58,8 +58,12 @@ python detect.py
     - 百度网盘链接：链接：https://pan.baidu.com/s/1nrLffPnwhslNZHZPpmUAoA  提取码：lf6y 
 
     - 清华网盘链接：https://cloud.tsinghua.edu.cn/f/f6748453cced47608edb/?dl=1
+  
+  - 提供的fire_new.pt:
+  
+    - 百度网盘链接：https://pan.baidu.com/s/1dRVtwi1etSEObMPW82wnDA 提取码：1gup
 
-3.在cfg文件夹中添加训练网络时修改过的xxx.cfg文件（示例球类检测的yolov3.cfg已经添加至cfg文件夹中）
+3.在cfg文件夹中添加训练网络时修改过的xxx.cfg文件（示例球类检测的yolov3.cfg已经添加至cfg文件夹中,更新fire）
 
 4.可能遇到no model named xxx，解决方法 pip install xxx
 
